@@ -30,6 +30,16 @@
     }
   },
   {
+    "description": "Bastion subnet CIDR when access is made through OCI Bastion",
+    "source": "10.81.227.22/32",
+    "protocol": "6",
+    "isStateless": false,
+    "tcpOptions": {
+      "destinationPortRange": {"max": 6443, "min": 6443},
+      "sourcePortRange": null
+    }
+  },
+  {
     "description": "Path Discovery",
     "source": "10.81.227.48/28",
     "protocol": "1",
