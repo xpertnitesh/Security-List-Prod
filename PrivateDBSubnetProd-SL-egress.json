@@ -1,0 +1,46 @@
+[
+  {
+    "description": "Response traffic to Node",
+    "destination": "10.81.227.48/28",
+    "destinationType": "CIDR_BLOCK",
+    "protocol": "6",
+    "isStateless": true,
+    "tcpOptions": {
+      "destinationPortRange": {"max": 65535, "min": 32768},
+      "sourcePortRange": {"max": 3306, "min": 3306}
+    }
+  },
+  {
+    "description": "Response traffic to OKE Cluster",
+    "destination": "10.81.227.0/28",
+    "destinationType": "CIDR_BLOCK",
+    "protocol": "6",
+    "isStateless": true,
+    "tcpOptions": {
+      "destinationPortRange": {"max": 65535, "min": 32768},
+      "sourcePortRange": {"max": 3306, "min": 3306}
+    }
+  },
+  {
+    "description": "Response traffic to Bastion",
+    "destination": "10.81.227.8/32",
+    "destinationType": "CIDR_BLOCK",
+    "protocol": "6",
+    "isStateless": true,
+    "tcpOptions": {
+      "destinationPortRange": {"max": 65535, "min": 32768},
+      "sourcePortRange": {"max": 3306, "min": 3306}
+    }
+  },
+  {
+    "description": "Response traffic to Bastion",
+    "destination": "10.81.227.22/32",
+    "destinationType": "CIDR_BLOCK",
+    "protocol": "6",
+    "isStateless": true,
+    "tcpOptions": {
+      "destinationPortRange": {"max": 65535, "min": 32768},
+      "sourcePortRange": {"max": 3306, "min": 3306}
+    }
+  }
+]

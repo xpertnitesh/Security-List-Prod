@@ -1,0 +1,16 @@
+[
+  {
+    "description": "Load balancer to worker nodes node ports.",
+    "destination": "10.81.227.48/28",
+    "protocol": "6",
+    "isStateless": false,
+    "tcpOptions": {"destinationPortRange": {"min": 30000, "max": 32767}}
+  },
+  {
+    "description": "Load balancer to worker nodes node ports.",
+    "destination": "10.81.227.48/28",
+    "protocol": "6",
+    "isStateless": false,
+    "tcpOptions": {"destinationPortRange": {"min": 10256, "max": 10256}}
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "description": "Kubernetes worker to Kubernetes API endpoint communication.",
+    "source": "10.81.227.48/28",
+    "protocol": "6",
+    "isStateless": false,
+    "tcpOptions": {
+      "destinationPortRange": {"max": 6443, "min": 6443},
+      "sourcePortRange": null
+    }
+  },
+  {
+    "description": "Kubernetes worker to control plane communication.",
+    "source": "10.81.227.48/28",
+    "protocol": "6",
+    "isStateless": false,
+    "tcpOptions": {
+      "destinationPortRange": {"max": 12250, "min": 12250},
+      "sourcePortRange": null
+    }
+  },
+  {
+    "description": "Bastion subnet CIDR when access is made through OCI Bastion",
+    "source": "10.81.227.8/32",
+    "protocol": "6",
+    "isStateless": false,
+    "tcpOptions": {
+      "destinationPortRange": {"max": 6443, "min": 6443},
+      "sourcePortRange": null
+    }
+  },
+  {
+    "description": "Path Discovery",
+    "source": "10.81.227.48/28",
+    "protocol": "1",
+    "isStateless": false,
+    "icmpOptions": {
+      "type": 3,
+      "code": 4
+    }
+  }
+]
+
